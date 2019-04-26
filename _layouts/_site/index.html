@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+    
+
+<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()"><span class="icon-menu"></span>
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+      <ul class="topnav">
+            
+            <a href="/" class="current"><span class="icon-home"></span>Home</a>
+            
+            <a href="/about.html" ><span class="icon-profile"></span>About</a>
+            
+            <a href="/blog.html" ><span class="icon-newspaper"></span>Blog</a>
+            
+            <a href="/staff.html" ><span class="icon-quill"></span>Staff</a>
+            
+      </ul>
+    </div>
+  </div> 
+</div>
+
+    
+    <header><h1>Hello World!<img class="tabby" src="img/tabby_cat.svg"></h1></header>
+<section class="content" >
+    <section class="vinstri">
+        <h2>Aðaldálkur</h2>
+        <p>Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones). Responsive Web Design is about using CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen. </p>
+        <section class="myndabox">
+            <figure class="einn"><img src="img/mynd-1.jpg"></figure>
+            <figure class="tveir"><img src="img/mynd-2.jpg"></figure>
+            <figure class="trir"><img src="img/mynd-3.jpg"></figure>
+            <figure class="fjorir"><img src="img/mynd-4.jpg"></figure>
+        </section>
+        <table>
+            <caption>Statement Summary</caption>
+            <thead>
+                <tr>
+                <th scope="col"></th>
+                <th scope="col">Forritun</th>
+                <th scope="col">Vefþróun</th>
+                <th scope="col">Tölvutækni</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td data-label="">1 önn.</td>
+                <td data-label="Forritun">FORR1FG05AU</td>
+                <td data-label="Vefþróun">VEFÞ1VG05AU</td>
+                <td data-label="Tölvutækni">KEST1TR05AU</td>
+                </tr>
+                <tr>
+                <td data-label="">2 önn.</td>
+                <td scope="row" data-label="Forritun">FORR2FA05BU</td>
+                <td data-label="Vefþróun">VEFÞ2VH05BU</td>
+                <td data-label="Tölvutækni<">KEST2VJ05BU</td>
+                </tr>
+                <tr>
+                <td data-label="">3 önn.</td>
+                <td scope="row" data-label="Forritun">FORR2HF05CU</td>
+                <td data-label="Vefþróun">VEFÞ2VF05CU</td>
+                <td data-label="Tölvutækni<">KEST2UN05CU</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="midja">
+        <div id="hreyfing">
+            <img class="bottom" src="img/bjarnibenshrek.jpg">
+            <img class="top" src="img/random_mynd.jpg">
+        </div>
+        <img class="orange" src="img/orange.jpg">
+        <p>Hér og bara hér getur þú fengið appelsínu</p>
+        <a href="https://www.amazon.com/produce-aisle-mburring-Orange-Medium/dp/B000SE9NUG">Smeltu hér fyrir appelsínu ( ͡° ͜ʖ ͡° ) </a>>
+    </section>
+</section>
+<footer>
+    <h3>Fótur</h3>
+</footer>
+
+    </nav>
+    
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+  </body>
+</html>

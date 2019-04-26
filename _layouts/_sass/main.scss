@@ -1,0 +1,411 @@
+body {
+  background:rgb(181, 214, 186);
+  line-height: 1.5em;
+}
+
+body {
+  display: grid;
+  grid-gap: 0; 
+  grid-template-areas:
+    "topnav"
+    "header"
+    "content"
+    "footer";
+}
+
+.orange{
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+
+/*Þetta er BYRJUN Form partsins -----------------T~T-----------------*/
+
+
+.formbox{
+  display: box;
+  padding: 16px;
+  margin: 60px;
+  width: auto;
+  height: auto;
+  background: rgb(170, 211, 94);
+}
+
+.texti{
+  font-family: 'Abril Fatface', cursive;
+}
+
+
+/*Þetta er ENDIR Form partsins -----------------T~T-----------------*/
+
+
+
+/*Þetta er BYRJUN animation partsins -----------------T~T-----------------*/
+
+
+.auglysingabox{
+  display: box;
+  padding: 20px;
+  margin-top: 20px;
+  width: auto;
+  height: auto;
+  background: rgb(131, 211, 111);
+}
+
+#hreyfing{
+  height:100px;
+  width:100px;
+  margin: auto;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+
+#hreyfing:hover{
+  width: 150px;
+  height: 150px;
+}
+
+#hreyfing img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#hreyfing img.top:hover {
+  opacity:0;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0% {left: 0px;}
+  30% {left: 200px;}  
+  60% {left: 200px;}
+  100% {left: 0px;}
+}
+
+@keyframes mymove {
+  0% {left: 0px;}
+  30% {left: 200px;}  
+  60% {left: 200px;}
+  100% {left: 0px;}
+}
+
+.texti2{
+  font-family: 'Dokdo', cursive;
+  text-align: center;
+  text-size-adjust: 100px;
+}
+
+
+/*Þetta er ENDIR animation partsins -----------------T~T-----------------*/
+
+
+
+/*Þetta er navbar byrjun -----------------T~T-----------------*/
+
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(78, 112, 150);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(120, 115, 192);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: rgb(27, 80, 129);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(245, 238, 238);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/*Þetta er navbar endirinn -----------------T~T-----------------*/
+
+
+
+.topnav {
+  grid-area: topnav; 
+  }
+
+header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content; 
+}
+
+footer {
+  grid-area: footer;
+}
+
+.topnav {
+  background: rgb(47, 168, 36); 
+}
+
+header {
+  background: rgb(50, 116, 88); 
+}
+
+.content{
+  background: rgb(78, 153, 43);
+}
+
+footer {
+  background: rgb(50, 116, 88); 
+}
+
+.midja{
+  background: rgb(102, 177, 68);
+}
+
+.midja{
+  grid-area: midja;
+}
+
+.vinstri{
+ grid-area: vinstri;
+}
+
+
+header,
+footer,
+.midja,
+.vinstri, 
+.haegri {
+padding: 1em; 
+}
+
+.content {
+  display: grid; /* grid erfist til barna (child element only) */
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "vinstri vinstri"
+    "vinstri vinstri";
+  }
+
+header h1 {
+  color: #fff;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  display: block; 
+}
+  
+figure {
+  margin:0; 
+  border: 1px solid black;
+}
+
+
+.myndabox {
+  width: 163px;
+  grid-gap: 0;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-areas: 
+  "einn"
+  "tveir"
+  "trir"
+  "fjorir";
+}
+
+.tabby {
+  max-width: 130px;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+@media screen and (min-width: 37.5em) {
+  
+  body {
+      display: grid;
+      grid-gap: 0; 
+      grid-template-areas:
+        "topnav"
+        "header"
+        "content"
+        "footer";
+  }
+  
+  .myndabox {
+      width: 318px;
+      grid-gap: 0;
+      display: grid;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "einn tveir"
+      "trir fjorir";
+  }
+}
+
+@media screen and (min-width: 60em) {
+  
+  body {
+      display: grid;
+      grid-gap: 0; 
+      grid-template-areas:
+        "topnav"
+        "header"
+        "content"
+        "footer";
+  }
+
+  .myndabox {
+      width: 486px;
+      grid-gap: 0;
+      display: grid;
+      margin-left: auto;
+      margin-right: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+      "einn tveir trir fjorir";
+  }
+  
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 783px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

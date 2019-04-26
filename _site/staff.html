@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Staff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+    
+
+<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()"><span class="icon-menu"></span>
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+      <ul class="topnav">
+            
+            <a href="/" ><span class="icon-home"></span>Home</a>
+            
+            <a href="/about.html" ><span class="icon-profile"></span>About</a>
+            
+            <a href="/blog.html" ><span class="icon-newspaper"></span>Blog</a>
+            
+            <a href="/staff.html" class="current"><span class="icon-quill"></span>Staff</a>
+            
+      </ul>
+    </div>
+  </div> 
+</div>
+
+    
+    <h1>Staff</h1>
+
+<ul>
+  
+    <li>
+      <h2><a href="/authors/jill.html">Jill Smith</a></h2>
+      <h3>Chief Editor</h3>
+      <p><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+    </li>
+  
+    <li>
+      <h2><a href="/authors/ted.html">Ted Doe</a></h2>
+      <h3>Writer</h3>
+      <p><p>Ted has been eating fruit since he was baby.</p>
+</p>
+    </li>
+  
+</ul>
+    </nav>
+    
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+  </body>
+</html>

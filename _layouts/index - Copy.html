@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./_sass/mainid.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./_sass/stillinn.css">
+  </head>
+  <body>
+    <nav>
+        <header><h1>Hello World!<img class="tabby" src="img/tabby_cat.svg"></h1></header>
+        <section class="content" >
+            <section class="vinstri">
+                <h2>Aðaldálkur</h2>
+                <p>Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones). Responsive Web Design is about using CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen. </p>
+                <section class="myndabox">
+                    <figure class="einn"><img src="img/mynd-1.jpg"></figure>
+                    <figure class="tveir"><img src="img/mynd-2.jpg"></figure>
+                    <figure class="trir"><img src="img/mynd-3.jpg"></figure>
+                    <figure class="fjorir"><img src="img/mynd-4.jpg"></figure>
+                </section>
+                <table>
+                    <caption>Firstu Þrjár Annirnar á Tölvubraut</caption>
+                    <thead>
+                        <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Forritun</th>
+                        <th scope="col">Vefþróun</th>
+                        <th scope="col">Tölvutækni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td data-label="">1 önn.</td>
+                        <td data-label="Forritun">FORR1FG05AU</td>
+                        <td data-label="Vefþróun">VEFÞ1VG05AU</td>
+                        <td data-label="Tölvutækni">KEST1TR05AU</td>
+                        </tr>
+                        <tr>
+                        <td data-label="">2 önn.</td>
+                        <td scope="row" data-label="Forritun">FORR2FA05BU</td>
+                        <td data-label="Vefþróun">VEFÞ2VH05BU</td>
+                        <td data-label="Tölvutækni">KEST2VJ05BU</td>
+                        </tr>
+                        <tr>
+                        <td data-label="">3 önn.</td>
+                        <td scope="row" data-label="Forritun">FORR2HF05CU</td>
+                        <td data-label="Vefþróun">VEFÞ2VF05CU</td>
+                        <td data-label="Tölvutækni">KEST2UN05CU</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <section class="formbox">
+                    <form>
+                        Skrifaðu Email-ið þitt hér<br>
+                        <input type="email" name="netfang" value="" placeholder="Netfang" required />
+                    </form>
+                    <form>
+                        Skrifaðu nafnið þitt hér (hafðu það á milli 6-20 stafa a-z)<br>
+                        <input type="text" required="" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{5,20}$" value="" name="nafn" placeholder="Nafn">
+                    </form>    
+                    <form>
+                        Settu inn fæðingardaginn þinn hér<br>
+                        <input type="date" name="afmaelisdagur" placeholder="Afmælisdagur">
+                    </form>
+                    <form>    
+                        Stimplaðu inn númerið þitt hér<br>
+                        <input type="tel" required="" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" value="" name="simanumer" placeholder="Símanúmer">
+                    </form>
+                    <form>
+                        Hvaða kyn ertu<br>
+                        <input type="radio" name="kyn" value="Karlkyns"> Karlkyns<br>
+                        <input type="radio" name="kyn" value="Kvenkyns"> Kvenkyns<br>
+                        <input type="radio" name="kyn" value="Kís ekki að svara"> Kís ekki að svara<br>
+                        <input type="radio" name="kyn" value="Annað"> Annað<br>
+                        Ef kosið var annað skal útskýra hvað er kyn þitt<br>
+                        <textarea class="texti" name="annad_kyn" rows="10" cols="30" placeholder="Útskýring"></textarea><br>
+                    </form>
+                    <form>
+                        Hvort ert Hávaxinn eða Lávaxinn<br>
+                        <select name="hvort_ert_Havaxinn_eda_lavaxinn">
+                            <option value="Hvort er það" selected>Hvort er það</option>
+                            <option value="Stór">Hávaxinn</option>
+                            <option value="Lítill">Lávaxinn</option>
+                        </select>
+                    </form>    
+                    <form>               
+                        Á hvaða dögum ertu að vinna<br>               
+                        <input type="checkbox" name="veit_ekki" value="Ekkert"> Er ekki viss<br>
+                        <input type="checkbox" name="dagur" value="mánudagur"> mánudagur<br>
+                        <input type="checkbox" name="dagur" value="þriðjudagur"> þriðjudagur<br>
+                        <input type="checkbox" name="dagur" value="miðvikudagur"> miðvikudagur<br>
+                        <input type="checkbox" name="dagur" value="fimmtudagur"> fimmtudagur<br>
+                        <input type="checkbox" name="dagur" value="föstudagur"> föstudagur<br>
+                        <input type="checkbox" name="dagur" value="laugardagur"> laugardagur<br>
+                        <input type="checkbox" name="dagur" value="sunnudagur"> sunnudagur<br>
+                    </form>
+                    <form>
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+            </section>
+        </section>
+        <footer>
+            <h3>Fótur</h3>
+        </footer>
+    </nav>
+    <aside class="auglysingabox">
+            <div id="hreyfing">
+                <img class="bottom" src="img/bjarnibenshrek.jpg">
+                <img class="top" src="img/random_mynd.jpg">
+            </div>
+            <img class="orange" src="img/orange.jpg">
+            <article class="texti2">    
+                <p>Hér og bara hér getur þú fengið appelsínu</p>
+                <a href="https://www.amazon.com/produce-aisle-mburring-Orange-Medium/dp/B000SE9NUG">Smeltu hér fyrir appelsínu ( ͡° ͜ʖ ͡° ) </a>
+            </article>
+        </aside>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+  </body>
+</html>
