@@ -1,3 +1,3 @@
 # GudjonOgAgust
 Lokaverkefni
-[home](index.html)
+[home](/index.html)
